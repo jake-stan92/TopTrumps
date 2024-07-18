@@ -33,5 +33,11 @@
     "tailwindcss": "^3.4.4",
     "vite": "^5.3.1",
     "vitest": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
   }
 }
